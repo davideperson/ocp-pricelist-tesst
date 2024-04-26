@@ -3,19 +3,19 @@ kind: Route
 metadata:
   creationTimestamp: null
   labels:
-    app: pricelist
+    app: pricelab
     tier: frontend
-  name: pricelist-route
-  namespace: pricelist
+  name: pricelab-route
+  namespace: pricelab
   annotations:
     argocd.argoproj.io/sync-wave: "5"
 spec:
-  host: "pricelist-route-pricelista.apps.ipi01.dap.local"
+  host: "pricelist-route-pricelab.apps.ipi01.dap.local"
   port:
     targetPort: 8080
   to:
     kind: Service
-    name: pricelist
+    name: pricelab
     weight: 100
 status:
   ingress:

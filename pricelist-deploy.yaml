@@ -3,29 +3,29 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: pricelist
+    app: pricelab
     tier: frontend
-  name: pricelist
-  namespace: pricelist
+  name: pricelab
+  namespace: pricelab
   annotations:
     argocd.argoproj.io/sync-wave: "5"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pricelist
+      app: pricelab
       tier: frontend
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: pricelist
+        app: pricelab
         tier: frontend
     spec:
       containers:
       - image: quay.io/redhatworkshops/pricelist:latest
-        name: pricelist
+        name: pricelab
         env:
         - name: MYSQL_DATABASE
           value: pricelist
