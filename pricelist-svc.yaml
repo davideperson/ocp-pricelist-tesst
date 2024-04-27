@@ -3,10 +3,10 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: pricelab
+    app: pricelist
     tier: frontend
-  name: pricelab
-  namespace: pricelab
+  name: pricelist
+  namespace: pricelist
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
@@ -15,7 +15,7 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: pricelab
+    app: pricelist
     tier: frontend
 status:
   loadBalancer: {}
