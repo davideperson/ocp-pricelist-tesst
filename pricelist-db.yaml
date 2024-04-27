@@ -6,7 +6,7 @@ metadata:
     app: mysql
     tier: database
   name: mysql
-  namespace: pricelab
+  namespace: pricelist
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
@@ -39,4 +39,4 @@ spec:
       volumes:
       - name: mysql-db
         persistentVolumeClaim:
-          claimName: pricelab-db-pvc
+          claimName: pricelist-db-pvc
