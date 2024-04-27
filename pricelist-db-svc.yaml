@@ -6,7 +6,7 @@ metadata:
     app: mysql
     tier: database
   name: mysql
-  namespace: pricelab
+  namespace: pricelist
   annotations:
     argocd.argoproj.io/sync-wave: "3"
 spec:
