@@ -2,7 +2,7 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: pricelist-db-pvc
-  namespace: pricelab
+  namespace: pricelist
   annotations:
     argocd.argoproj.io/sync-wave: "0"
 spec:
